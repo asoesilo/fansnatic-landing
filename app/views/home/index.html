@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <!-- TITLE OF SITE -->
+    <title>SmartMVP | Startup and App Responsive Landing Page Template</title>
+
+    <meta name="description" content="Responsive Landing Page for Presenting Your Startup: Saas, Mobile or Web Application" />
+    <meta name="keywords" content="smartmvp, startup theme, startup template, startup example, startup landing page, one page, responsive, app landing, html template, mobile application, responsive landing page" />
+    <meta name="author" content="ThemeDept">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+    <!-- =========================
+       STYLESHEETS
+    ============================== -->
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+    <!-- GOOGLE FONTS -->
+    <link href="http://fonts.googleapis.com/css?family=Raleway:300,400,600,700%7COpen+Sans:300,400,600,700%7CHandlee" rel="stylesheet">
+
+
+    <!--[if lt IE 9]>
+            <script src="assets/js/plugins/html5shiv.min.js"></script>
+            <script src="assets/js/plugins/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <!-- =========================
+         PRELOADER
+    ============================== -->
+    <div class="preloader">
+        <div class="loader-container">
+            <div class="text-logo">SmartMVP</div>
+            <div class="signal"></div>
+        </div>
+    </div>
+
+
+    <!-- =========================
+         HEADER
+    ============================== -->
+    <header class="header" id="top" data-stellar-background-ratio="0.5">
+        <!-- Background Overlay -->
+        <div class="overlay">
+
+            <!-- =========================================
+                 Navigation
+            ========================================== -->
+            <nav class="navbar navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!-- Navbar-Header -->
+                            <div class="navbar-header">
+
+                                <!-- Mobile Menu -->
+                                <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+                                    <i class="icon icon_menu"></i>
+                                </button>
+
+                                <!-- Text-Logo -->
+                                <a href="#top" class="navbar-brand scrollto" title="SmartMvp">
+                                    <span class="text-logo">SmartMvp</span>
+                                </a>
+
+                                <!-- Image-Logo: Remove this comments and the section above Text-Logo if you want to add an Image-Logo (recommended sizes -> max-height:50, max-width:200)
+
+                                <a href="#top" class="navbar-brand img-logo scrollto" title="SmartMvp">
+                                    <img src="assets/images/logo.png" alt="Logo">
+                                </a>
+                                -->
+
+                            </div><!-- /End Navbar-Header -->
+
+                            <!-- Navbar-Collapse -->
+                            <div class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <!-- Menu Items -->
+                                    <li><a href="#about" title="" class="scrollto">About</a></li>
+                                    <li><a href="#features" title="" class="scrollto">Features</a></li>
+                                    <li><a href="#pricing" title="" class="scrollto">Pricing</a></li>
+                                    <li><a href="#testimonials" title="" class="scrollto">Testimonials</a></li>
+                                    <li><a href="#team" title="" class="scrollto">Team</a></li>
+                                    <li><a href="#mobile-download" title="" class="scrollto">Mobile</a></li>
+                                    <!-- Early Access Modal on click -->
+                                    <li><a class="btn btn-nav btn-signup" data-toggle="modal" href="javascript:void(0)" onclick="openEarlyAccessModal();">Get Early Access</a></li>
+                                </ul>
+                            </div><!-- /End Navbar-Collapse -->
+                        </div><!-- /End Col -->
+                    </div><!-- /End Row -->
+                </div><!-- /End Container -->
+            </nav><!-- /End Sticky Navigation -->
+
+
+            <!-- ==================================================
+                 Login/Signup Bootstrap Modal fixes for Early Access
+            ==================================================  -->
+            <div class="modal fade login" id="loginModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <!-- Modal-Header -->
+                        <div class="modal-header">
+                            <!-- Close Button -->
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                <i class="icon icon_close_alt2"></i>
+                            </button>
+                            <!-- Modal-Header Title-->
+                            <h4 class="modal-title">Get Early Access</h4>
+                            <p class="modal-subtitle">Enter your Email and Join Beta.</p>
+                        </div><!-- /End Modal-Header -->
+
+                        <!-- Modal-Body Content -->
+                        <div class="modal-body">
+                            <div class="box">
+                                 <div class="content">
+                                    <!-- Early Access Form -->
+                                    <div class="loginBox">
+                                        <form id="earlyaccess-modal" role="form">
+                                            <!-- Success/Alert Notification -->
+                                            <p class="lm-success"><i class="icon icon_check_alt2"></i> <strong>Congratulation! Early Access modal is working. Check email list.</strong></p>
+                                            <p class="lm-failed"><i class="icon icon_close_alt2"></i><strong> Something went wrong! Insert correct value.</strong></p>
+                                            <!-- Input Fields -->
+                                            <input id="lm-email" class="form-control input-lg" type="text" placeholder="Email" name="lm-email" required>
+                                            <!-- Login Button -->
+                                            <button class="btn btn-color">Hook me Up!</button>
+                                        </form>
+                                    </div><!-- /End Early Access Form -->
+                                 </div>
+                            </div><!-- /End Early Access Form Box -->
+                        </div><!-- /End Modal-Body -->
+
+                        <!-- Modal-Footer -->
+                        <div class="modal-footer">
+                            <!-- Early Access-Footer.-->
+                            <div class="forgot login-footer">
+                                <span>Sign up to be the first to try our service.</span>
+                            </div>
+                        </div><!-- /End Modal-Footer -->
+
+                    </div><!-- /End Modal Content -->
+                </div><!-- /End Modal Dialog -->
+            </div><!-- /End Modal -->
+
+
+            <!-- =========================================
+                 Hero-Section
+            ========================================== -->
+            <div class="container vmiddle earlyaccess">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="hero-section">
+
+                            <!-- Welcome - Hero Message -->
+                            <h1 class="text-white">Achieve Better Marketing Results <br> with Clean &amp; Beautiful Design</h1>
+                            <p class="text-white">Your starting point for building successful software products.</p>
+
+                            <div class="col-md-10 col-md-offset-1">
+                                <!-- Early Access Subscribe. Emails List in subscribe.txt -->
+                                <form id="subscribe" role="form">
+                                    <div class="row earlyaccess-box">
+                                        <div class="col-sm-8 col-sm-offset-2">
+                                            <p class="subscription-success"><i class="icon icon_check_alt2"></i> You are successfully subscribed for our beta list.</p>
+                                            <p class="subscription-failed"><i class="icon icon_close_alt2"></i> Something went wrong!</p>
+
+                                            <div class="input-group">
+                                                <input type="email" id="s-email" name="email" placeholder="Enter your Email Address" class="form-control" required>
+                                                <span class="input-group-btn">
+                                                    <button class="btn btn-color">SIGN UP FOR BETA</button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div><!-- /End Intro-Section -->
+                    </div><!-- /End Col -->
+                </div><!-- /End Row -->
+            </div><!-- /End Container Hero-Section -->
+
+
+        </div><!-- /End Background Overlay -->
+    </header>
+    <!-- =========================
+         /END HEADER
+    ============================== -->
+
+
+    <!-- =================================
+         SECTION ABOUT - INTRO FEATURES
+    ====================================== -->
+    <section class="intro-features" id="about">
+        <div class="container">
+            <!-- Padding -->
+            <div class="wrapper-lg">
+                <div class="row">
+                    <!-- Section Header Title -->
+                    <div class="col-xs-12">
+                        <h2>It's about making ideas happen</h2>
+                        <p class="large">Spend less time worrying about front-end and more focusing on your product.</p>
+                    </div>
+                </div>
+                <!-- Three Main Features with Icons -->
+                <div class="row">
+                    <div class="col-sm-4 intro-content">
+                        <div class="icon-lg">
+                            <i class="icon icon-mobile"></i>
+                        </div>
+                        <h4>Responsive Layout</h4>
+                        <p>Optio dolores expedita unde vel laudantium enim nisi eos distinctio, rem. Repellat repudiandae quos laborum magni.</p>
+                    </div>
+                    <div class="col-sm-4 intro-content">
+                        <div class="icon-lg">
+                            <i class="icon icon-browser"></i>
+                        </div>
+                        <h4>Easy to Customize</h4>
+                        <p>Praesentium reprehenderit quae, sequi deserunt laboriosam velit necessitatibus nulla ea optio, quis nam pariatur.</p>
+                    </div>
+                    <div class="col-sm-4 intro-content">
+                        <div class="icon-lg">
+                            <i class="icon icon-documents"></i>
+                        </div>
+                        <h4>Fully Documented</h4>
+                        <p>Aperiam recusandae ipsa culpa, cupiditate magnam dolor molestiae, omnis, architecto possimus aperiam corrupti corporis.</p>
+                    </div>
+                </div><!-- /End Row -->
+            </div><!-- /End Wrapper -->
+        </div><!-- /End Container -->
+    </section>
+    <!-- =============================
+         /END INTRO FEATURES
+    ============================== -->
+
+
+    <!-- ==================================================
+        FOOTER
+    ======================================================= -->
+    <footer class="footer dark-bg" id="footer">
+        <div class="container">
+            <div class="wrapper-xs">
+                <div class="row">
+                    <!-- Footer Menu and Copy -->
+                    <div class="col-md-12">
+                        <p class="footer-copy">&copy; 2014 - SmartMvp. Original Design by <a href="http://themedept.com">ThemeDept.</a></p>
+                    </div>
+                </div><!-- End Row -->
+            </div><!-- /End Wrapper -->
+        </div><!-- /End Container -->
+    </footer>
+
+
+    <!-- =========================
+         SCRIPTS
+    ============================== -->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
