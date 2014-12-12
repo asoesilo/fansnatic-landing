@@ -51,9 +51,9 @@
  }
 
  .navbar-nav>li>a.btn-signup {
-   background: #c0392b;
+   background: transparent;
    color: #ffffff;
-   border-color: #c0392b;
+   border-color: white;
  }
 
  .navbar-nav>li>a.btn-signup:hover, .navbar-nav>li>a.btn-signup:focus {
