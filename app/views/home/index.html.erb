@@ -4,11 +4,11 @@
     <meta charset="utf-8">
 
     <!-- TITLE OF SITE -->
-    <title>SmartMVP | Startup and App Responsive Landing Page Template</title>
+    <title>Mitt.io | The most exciting games. The cheapest prices</title>
 
-    <meta name="description" content="Responsive Landing Page for Presenting Your Startup: Saas, Mobile or Web Application" />
-    <meta name="keywords" content="smartmvp, startup theme, startup template, startup example, startup landing page, one page, responsive, app landing, html template, mobile application, responsive landing page" />
-    <meta name="author" content="ThemeDept">
+    <meta name="description" content="The most exciting games. The cheapest prices. Mitt.io" />
+    <meta name="keywords" content="sports, travel, tickets, find tickets, find flights, follow teams, find games, find tickets for games" />
+    <meta name="author" content="Mitt.io">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
@@ -20,7 +20,7 @@
 
     <!-- GOOGLE FONTS -->
     <link href="http://fonts.googleapis.com/css?family=Raleway:300,400,600,700%7COpen+Sans:300,400,600,700%7CHandlee" rel="stylesheet">
-
+    <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
     <!-- FONT AWESOME -->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
@@ -37,7 +37,7 @@
     ============================== -->
     <div class="preloader">
         <div class="loader-container">
-            <div class="text-logo">MITT</div>
+            <div class="text-logo">MITT.io</div>
             <div class="signal"></div>
         </div>
     </div>
@@ -46,7 +46,7 @@
     <!-- =========================
          HEADER
     ============================== -->
-    <header class="header" id="top" data-stellar-background-ratio="0.5">
+    <header class="header" style="background: url('<%= @random_background %>') no-repeat center top fixed; background-size: cover;" id="top" data-stellar-background-ratio="0.5">
         <!-- Background Overlay -->
         <div class="overlay">
 
@@ -67,7 +67,7 @@
 
                                 <!-- Text-Logo -->
                                 <a href="#top" class="navbar-brand scrollto" title="Mitt">
-                                    <span class="text-logo">Mitt</span>
+                                    <span class="text-logo">Mitt.io</span>
                                 </a>
 
                                 <!-- Image-Logo: Remove this comments and the section above Text-Logo if you want to add an Image-Logo (recommended sizes -> max-height:50, max-width:200)
@@ -118,7 +118,7 @@
                                     <div class="loginBox">
                                         <%= form_tag "/signup", id: "earlyaccess-modal", method: "post" do %>
                                             <!-- Success/Alert Notification -->
-                                            <p class="lm-success"><i class="icon icon_check_alt2"></i> <strong>Congratulation! Early Access modal is working. Check email list.</strong></p>
+                                            <p class="lm-success"><i class="icon icon_check_alt2"></i> <strong>Enter your email and we'll notify you when we launch!</strong></p>
                                             <p class="lm-failed"><i class="icon icon_close_alt2"></i><strong> Something went wrong! Insert correct value.</strong></p>
                                             <!-- Input Fields -->
                                             <%= email_field_tag :email, nil, :placeholder => "Email", :class => "form-control input-lg", :required => true %>
@@ -152,9 +152,9 @@
                         <div class="hero-section">
 
                             <!-- Welcome - Hero Message -->
-                            <h1 class="text-white">Achieve Better Marketing Results <br> with Clean &amp; Beautiful Design</h1>
-                            <p class="text-white">Your starting point for building successful software products.</p>
-
+<!--                             <h1 class="text-white">Mitt.io</h1> -->
+                            <h1 class="text-white">The most exciting games. The cheapest prices.</h1>
+                            <br>
                             <div class="col-md-10 col-md-offset-1">
                                 <!-- Early Access Subscribe. Emails List in subscribe.txt -->
                                 <%= form_tag "/signup", id: "subscribe", method: "post" do %>
@@ -197,32 +197,32 @@
                 <div class="row">
                     <!-- Section Header Title -->
                     <div class="col-xs-12">
-                        <h2>It's about making ideas happen</h2>
-                        <p class="large">Spend less time worrying about front-end and more focusing on your product.</p>
+                        <h2>Be there for the biggest moments </h2>
+                        <!-- <p class="large">Spend less time worrying about front-end and more focusing on your product.</p> -->
                     </div>
                 </div>
                 <!-- Three Main Features with Icons -->
                 <div class="row">
                     <div class="col-sm-4 intro-content">
                         <div class="icon-lg">
-                            <i class="icon icon-mobile"></i>
+                            <i class="fa fa-ticket"></i>
                         </div>
-                        <h4>Responsive Layout</h4>
-                        <p>Optio dolores expedita unde vel laudantium enim nisi eos distinctio, rem. Repellat repudiandae quos laborum magni.</p>
+                        <h4>The Best Tickets</h4>
+                        <p>Spend less time searching and more time watching. Tell us your favorite teams, set your price range and let Mitt notify you when we find the tickets you’re looking for. </p>
                     </div>
                     <div class="col-sm-4 intro-content">
                         <div class="icon-lg">
-                            <i class="icon icon-browser"></i>
+                            <i class="fa fa-plane"></i>
                         </div>
-                        <h4>Easy to Customize</h4>
-                        <p>Praesentium reprehenderit quae, sequi deserunt laboriosam velit necessitatibus nulla ea optio, quis nam pariatur.</p>
+                        <h4>The Cheapest Flights</h4>
+                        <p>Don’t let long distance get in the way of you and your favorite team.  Mitt helps you find the best game day flight deals.</p>
                     </div>
                     <div class="col-sm-4 intro-content">
                         <div class="icon-lg">
-                            <i class="icon icon-documents"></i>
+                            <i class="fa fa-search"></i>
                         </div>
-                        <h4>Fully Documented</h4>
-                        <p>Aperiam recusandae ipsa culpa, cupiditate magnam dolor molestiae, omnis, architecto possimus aperiam corrupti corporis.</p>
+                        <h4>The Easiest Filtering</h4>
+                        <p>Mitt finds you games that fit around your busy schedule and lets you easily sort them by price, date, weekend games and key matchups.</p>
                     </div>
                 </div><!-- /End Row -->
             </div><!-- /End Wrapper -->
