@@ -14,3 +14,6 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
