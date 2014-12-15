@@ -38,3 +38,9 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+# Use mandrill-api to access Mandrill email as a service platform
+gem 'mandrill-api', '~> 1.0.53'
+
+# Use pry and pry-debugger for debugging in development
+gem 'pry'
+gem 'pry-debugger', group: :development
