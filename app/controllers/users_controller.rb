@@ -1,6 +1,10 @@
 class UsersController < ApplicationController
   def create
-    user = User.create email: params['email']
-    if user.valid? then head :ok else head 400 end
+    email = params['email']
+    user = User.create email: email
+    return head 400 unless user.valid?
+
+    Mailer.send_email email
+    head :ok
   end
 end
