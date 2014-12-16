@@ -15,6 +15,6 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 gem 'mandrill-api', '~> 1.0.53'
 gem 'pry'
-gem 'pry-debugger', group: :development
+# gem 'pry-debugger', group: :development
 
 gem 'dotenv-rails', :groups => [:development, :test]
