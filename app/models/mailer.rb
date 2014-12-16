@@ -1,7 +1,7 @@
 class Mailer
   class << self
     require 'mandrill'
-    MANDRILL = Mandrill::API.new 'JGBslOo5JGRo3dtUos9L5w'
+    MANDRILL = Mandrill::API.new ENV['MANDRILL_API_KEY']
     TEMPLATE_NAME = 'sign-up'
     TEMPLATE_CONTENT = nil
     ASYNC = false
