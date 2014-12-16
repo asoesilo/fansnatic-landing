@@ -164,10 +164,14 @@
                                             <p class="subscription-failed"><i class="fa fa-exclamation-circle"></i> Something went wrong!</p>
 
                                             <div class="input-group">
+                                                <div class="col-md-8 col-xs-8 col-xs-offset-2 col-md-offset-0">
                                                 <%= email_field_tag :email, nil, :placeholder => "Enter your Email Address", :class => "form-control", :id => "email-field", :required => true %>
-                                                <span class="input-group-btn">
-                                                    <%= submit_tag "SIGN UP FOR BETA", :class => "btn btn-color",  id: "submit-button" %>
-                                                </span>
+                                                </div>
+                                                <div class="col-md-4 col-xs-8 col-xs-offset-2 col-md-offset-0">
+                                                    <span class="input-group-btn">
+                                                        <%= submit_tag "SIGN UP FOR BETA", :class => "btn btn-color",  id: "submit-button" %>
+                                                    </span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -196,8 +200,8 @@
             <div class="wrapper-lg">
                 <div class="row">
                     <!-- Section Header Title -->
-                    <div class="col-xs-12">
-                        <h2>Be there for the biggest moments </h2>
+                    <div class="col-xs-12 section-title">
+                        <h1>Be there for the biggest moments </h1>
                         <!-- <p class="large">Spend less time worrying about front-end and more focusing on your product.</p> -->
                     </div>
                 </div>
@@ -207,22 +211,22 @@
                         <div class="icon-lg">
                             <i class="fa fa-ticket"></i>
                         </div>
-                        <h4>The Best Tickets</h4>
+                        <h4>Tickets</h4>
                         <p>Spend less time searching and more time watching. Tell us your favorite teams, set your price range and let Mitt notify you when we find the tickets you’re looking for. </p>
                     </div>
                     <div class="col-sm-4 intro-content">
                         <div class="icon-lg">
                             <i class="fa fa-plane"></i>
                         </div>
-                        <h4>The Cheapest Flights</h4>
+                        <h4>Flights</h4>
                         <p>Don’t let long distance get in the way of you and your favorite team.  Mitt helps you find the best game day flight deals.</p>
                     </div>
                     <div class="col-sm-4 intro-content">
                         <div class="icon-lg">
-                            <i class="fa fa-search"></i>
+                            <i class="fa fa-bullhorn"></i>
                         </div>
-                        <h4>The Easiest Filtering</h4>
-                        <p>Mitt finds you games that fit around your busy schedule and lets you easily sort them by price, date, weekend games and key matchups.</p>
+                        <h4>Notifcations</h4>
+                        <p>Custom alerts for your favorite teams and sports. Mitt searches thousands of flights and tickets and notifies you of the best deals.</p>
                     </div>
                 </div><!-- /End Row -->
             </div><!-- /End Wrapper -->
@@ -242,7 +246,7 @@
                 <div class="row">
                     <!-- Footer Menu and Copy -->
                     <div class="col-md-12">
-                        <p class="footer-copy">&copy; 2014 - Mitt. Original Design by <a href="http://themedept.com">ThemeDept.</a></p>
+                        <p class="footer-copy">&copy; 2014 - Mitt.io</a></p>
                     </div>
                 </div><!-- End Row -->
             </div><!-- /End Wrapper -->

@@ -1,12 +1,12 @@
 /* ==========================================================================
-   COLOR: RED #b65656 - #b65656
+   COLOR: RED #B6564E - #B6564E
 ========================================================================== */
 a, .text-color {
- 	color: #b65656;
+ 	color: #B6564E;
 }
 
 .color-bg {
-    background-color: #b65656;
+    background-color: #B6564E;
 }
 
 /*------------------------------------------*/
@@ -14,35 +14,35 @@ a, .text-color {
 /*------------------------------------------*/
 .btn-color-ghost {
 	background: transparent;
-	color: #b65656;
-	border-color: #b65656;
+	color: #B6564E;
+	border-color: #B6564E;
 }
 
 .btn-color, .btn-color-ghost:hover {
-	background: #b65656;
+	background: #B6564E;
 	color: #fff;
-	border-color: #b65656;
+	border-color: #B6564E;
 }
 
 .btn-color:hover {
 	background: #ffffff;
-	color: #b65656;
-	border-color: #b65656;
+	color: #B6564E;
+	border-color: #B6564E;
 }
 
 .btn-white {
-    color: #b65656;
+    color: #B6564E;
 }
 
 .navbar-nav>li>a.btn-signup {
-    background: #b65656;
+    background: #B6564E;
     color: #ffffff;
-    border-color: #b65656;
+    border-color: #B6564E;
 }
 
 .navbar-nav>li>a.btn-signup:hover, .navbar-nav>li>a.btn-signup:focus {
     background: #ffffff;
-    color: #b65656;
+    color: #B6564E;
     border-color: #ffffff;
 }
 
@@ -51,46 +51,46 @@ a, .text-color {
 /*------------------------------------------*/
 .solid-bg{
     background:none;
-    background-color: #b65656;
+    background-color: #B6564E;
 }
 
 .navbar-nav>li>a.btn-white{
-    color: #b65656;
+    color: #B6564E;
 }
 
 /*------------------------------------------*/
 /*   Header App
 /*------------------------------------------*/
 .type .hero-section span{
-    background-color: #b65656;
+    background-color: #B6564E;
 }
 
 /*------------------------------------------*/
 /*	 Form
 /*------------------------------------------*/
 .form-control {
-    border: 2px solid #b65656;
+    border: 2px solid #B6564E;
 }
 
 /*------------------------------------------*/
 /*	 Icons
 /*------------------------------------------*/
 .icon-lg:hover, .icon-lg:focus, .icon-sm:hover, .icon-sm:focus {
-    color:#b65656;
+    color:#B6564E;
 }
 
 /*------------------------------------------*/
 /*	 Preloader
 /*------------------------------------------*/
 .preloader{
-	background-color: #b65656;
+	background-color: #B6564E;
 }
 
 /*------------------------------------------*/
 /*   Navbar Links Menu
 /*------------------------------------------*/
 .is-scrolling .navbar-nav>.active>a, .is-scrolling .navbar-nav>.active>a:hover, .is-scrolling .navbar-nav>.active>a:focus {
-    color: #b65656;
+    color: #B6564E;
     background-color: transparent;
 }
 
@@ -99,41 +99,41 @@ a, .text-color {
 /*------------------------------------------*/
 .login .modal-header .modal-title span{
     font-weight: 400;
-    color: #b65656;
+    color: #B6564E;
 }
 
 /*------------------------------------------*/
 /*   Pricing Tab
 /*------------------------------------------*/
 .pricing-tab {
-    border: 3px solid #b65656;
+    border: 3px solid #B6564E;
 }
 
 .pricing-tab h4 {
-    border-bottom: 3px solid #b65656;
+    border-bottom: 3px solid #B6564E;
 }
 
 .pricing-tab .ribbon .popular{
-    background-color: #b65656;
+    background-color: #B6564E;
 }
 
 /*------------------------------------------*/
 /*   Team
 /*------------------------------------------*/
 .team-img .img-icons span i:hover{
-    color: #b65656;
+    color: #B6564E;
 }
 
 /*------------------------------------------*/
 /*   Signup-Divider & Fast-Reg
 /*------------------------------------------*/
 .signup-divider .form-control:focus{
-    border-color: #b65656;
+    border-color: #B6564E;
 }
 
 .fast-reg .form-control:focus{
-    background-color: #b65656;
-    border-color: #b65656;
+    background-color: #B6564E;
+    border-color: #B6564E;
     box-shadow: none;
 }
 
@@ -141,7 +141,7 @@ a, .text-color {
 /*   Footer
 /*------------------------------------------*/
 .footer a:hover{
-    color: #b65656;
+    color: #B6564E;
 }
 
 
