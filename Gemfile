@@ -46,3 +46,5 @@ gem 'mandrill-api', '~> 1.0.53'
 # Use pry and pry-debugger for debugging in development
 gem 'pry'
 gem 'pry-debugger', group: :development
+
+ruby '2.1.4'
