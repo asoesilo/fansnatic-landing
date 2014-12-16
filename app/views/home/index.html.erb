@@ -157,16 +157,16 @@
                             <br>
                             <div class="col-md-10 col-md-offset-1">
                                 <!-- Early Access Subscribe. Emails List in subscribe.txt -->
-                                <%= form_tag "/signup", id: "subscribe", method: "post" do %>
+                                <%= form_tag "/signup", remote: true, id: "subscribe", method: "post" do %>
                                     <div class="row earlyaccess-box">
                                         <div class="col-sm-8 col-sm-offset-2">
-                                            <p class="subscription-success"><i class="icon icon_check_alt2"></i> You are successfully subscribed for our beta list.</p>
-                                            <p class="subscription-failed"><i class="icon icon_close_alt2"></i> Something went wrong!</p>
+                                            <p class="subscription-success"><i class="fa fa-check-circle"></i> You are successfully subscribed for our beta list.</p>
+                                            <p class="subscription-failed"><i class="fa fa-exclamation-circle"></i> Something went wrong!</p>
 
                                             <div class="input-group">
-                                                <%= email_field_tag :email, nil, :placeholder => "Enter your Email Address", :class => "form-control", :required => true %>
+                                                <%= email_field_tag :email, nil, :placeholder => "Enter your Email Address", :class => "form-control", :id => "email-field", :required => true %>
                                                 <span class="input-group-btn">
-                                                    <%= submit_tag "SIGN UP FOR BETA", :class => "btn btn-color" %>
+                                                    <%= submit_tag "SIGN UP FOR BETA", :class => "btn btn-color",  id: "submit-button" %>
                                                 </span>
                                             </div>
                                         </div>
