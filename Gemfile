@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby '2.1.4'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.8'
@@ -47,4 +47,4 @@ gem 'mandrill-api', '~> 1.0.53'
 gem 'pry'
 gem 'pry-debugger', group: :development
 
-ruby '2.1.4'
+gem 'dotenv-rails', :groups => [:development, :test]

@@ -127,7 +127,7 @@ ul {
     zoom: 1;
     filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#80000000', endColorstr='#80000000');
     background: transparent;
-    background: rgba(51, 51, 65, 0.3);
+    background: rgba(51, 51, 65, 0.5);
 }
 
 /* set filter as none for IE9+, because IE9+ support RGBa */
