@@ -4,7 +4,7 @@ class UsersController < ApplicationController
     user = User.create email: email
     return head 400 unless user.valid?
 
-    # Mailer.send_email email
+    Mailer.send_email email
     head :ok
   end
 end
