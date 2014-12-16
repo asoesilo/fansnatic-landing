@@ -4,42 +4,25 @@
     <meta charset="utf-8">
 
     <!-- TITLE OF SITE -->
-    <title>SmartMVP | Startup and App Responsive Landing Page Template</title>
+    <title>Mitt.io | The most exciting games. The cheapest prices</title>
 
-    <meta name="description" content="Responsive Landing Page for Presenting Your Startup: Saas, Mobile or Web Application" />
-    <meta name="keywords" content="smartmvp, startup theme, startup template, startup example, startup landing page, one page, responsive, app landing, html template, mobile application, responsive landing page" />
-    <meta name="author" content="ThemeDept">
+    <meta name="description" content="The most exciting games. The cheapest prices. Mitt.io" />
+    <meta name="keywords" content="sports, travel, tickets, find tickets, find flights, follow teams, find games, find tickets for games" />
+    <meta name="author" content="Mitt.io">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <!-- FAVICON  -->
-    <link rel="icon" href="assets/images/favicon/favicon.ico">
 
     <!-- =========================
        STYLESHEETS
     ============================== -->
-
     <!-- BOOTSTRAP CSS -->
-    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
-
-    <!-- FONT ICONS -->
-    <link rel="stylesheet" href="assets/css/icons/icons.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 
     <!-- GOOGLE FONTS -->
     <link href="http://fonts.googleapis.com/css?family=Raleway:300,400,600,700%7COpen+Sans:300,400,600,700%7CHandlee" rel="stylesheet">
-
-    <!-- PLUGINS STYLESHEET -->
-    <link rel="stylesheet" href="assets/css/plugins/plugins.min.css">
-
-    <!-- CUSTOM STYLESHEET -->
-    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
-
-    <!-- RESPONSIVE FIXES -->
-<!--     <link rel="stylesheet" href="assets/css/responsive.css"> -->
-
-    <!-- COLORE STYLESHEET -->
-    <!-- Change here the Main Color of the Site: Choose your favorite predefined color from assets/css/colors.css -->
-    <link rel="stylesheet" href="assets/css/colors/red.css" title="red">
-
+    <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+    <!-- FONT AWESOME -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
             <script src="assets/js/plugins/html5shiv.min.js"></script>
@@ -52,18 +35,18 @@
     <!-- =========================
          PRELOADER
     ============================== -->
-    <!-- <div class="preloader">
+    <div class="preloader">
         <div class="loader-container">
-            <div class="text-logo">SmartMVP</div>
+            <div class="text-logo">MITT.io</div>
             <div class="signal"></div>
         </div>
-    </div> -->
+    </div>
 
 
     <!-- =========================
          HEADER
     ============================== -->
-    <header class="header" id="top" data-stellar-background-ratio="0.5">
+    <header class="header" style="background: url('<%= @random_background %>') no-repeat center top fixed; background-size: cover;" id="top" data-stellar-background-ratio="0.5">
         <!-- Background Overlay -->
         <div class="overlay">
 
@@ -83,13 +66,13 @@
                                 </button>
 
                                 <!-- Text-Logo -->
-                                <a href="#top" class="navbar-brand scrollto" title="SmartMvp">
-                                    <span class="text-logo">SmartMvp</span>
+                                <a href="#top" class="navbar-brand scrollto" title="Mitt">
+                                    <span class="text-logo">Mitt.io</span>
                                 </a>
 
                                 <!-- Image-Logo: Remove this comments and the section above Text-Logo if you want to add an Image-Logo (recommended sizes -> max-height:50, max-width:200)
 
-                                <a href="#top" class="navbar-brand img-logo scrollto" title="SmartMvp">
+                                <a href="#top" class="navbar-brand img-logo scrollto" title="Mitt">
                                     <img src="assets/images/logo.png" alt="Logo">
                                 </a>
                                 -->
@@ -99,13 +82,6 @@
                             <!-- Navbar-Collapse -->
                             <div class="navbar-collapse collapse">
                                 <ul class="nav navbar-nav navbar-right">
-                                    <!-- Menu Items -->
-                                    <li><a href="#about" title="" class="scrollto">About</a></li>
-                                    <li><a href="#features" title="" class="scrollto">Features</a></li>
-                                    <li><a href="#pricing" title="" class="scrollto">Pricing</a></li>
-                                    <li><a href="#testimonials" title="" class="scrollto">Testimonials</a></li>
-                                    <li><a href="#team" title="" class="scrollto">Team</a></li>
-                                    <li><a href="#mobile-download" title="" class="scrollto">Mobile</a></li>
                                     <!-- Early Access Modal on click -->
                                     <li><a class="btn btn-nav btn-signup" data-toggle="modal" href="javascript:void(0)" onclick="openEarlyAccessModal();">Get Early Access</a></li>
                                 </ul>
@@ -140,15 +116,15 @@
                                  <div class="content">
                                     <!-- Early Access Form -->
                                     <div class="loginBox">
-                                        <form id="earlyaccess-modal" role="form">
+                                        <%= form_tag "/signup", id: "earlyaccess-modal", method: "post" do %>
                                             <!-- Success/Alert Notification -->
-                                            <p class="lm-success"><i class="icon icon_check_alt2"></i> <strong>Congratulation! Early Access modal is working. Check email list.</strong></p>
+                                            <p class="lm-success"><i class="icon icon_check_alt2"></i> <strong>You are successfully subscribed for our beta list.</strong></p>
                                             <p class="lm-failed"><i class="icon icon_close_alt2"></i><strong> Something went wrong! Insert correct value.</strong></p>
                                             <!-- Input Fields -->
-                                            <input id="lm-email" class="form-control input-lg" type="text" placeholder="Email" name="lm-email" required>
+                                            <%= email_field_tag :email, nil, :id => "lm-email", :placeholder => "Email", :class => "form-control input-lg", :required => true %>
                                             <!-- Login Button -->
-                                            <button class="btn btn-color">Hook me Up!</button>
-                                        </form>
+                                            <%= submit_tag "Hook me Up!", :class => "btn btn-color" %>
+                                        <% end %>
                                     </div><!-- /End Early Access Form -->
                                  </div>
                             </div><!-- /End Early Access Form Box -->
@@ -176,26 +152,26 @@
                         <div class="hero-section">
 
                             <!-- Welcome - Hero Message -->
-                            <h1 class="text-white">Achieve Better Marketing Results <br> with Clean &amp; Beautiful Design</h1>
-                            <p class="text-white">Your starting point for building successful software products.</p>
-
+<!--                             <h1 class="text-white">Mitt.io</h1> -->
+                            <h1 class="text-white">The most exciting games. The cheapest prices.</h1>
+                            <br>
                             <div class="col-md-10 col-md-offset-1">
                                 <!-- Early Access Subscribe. Emails List in subscribe.txt -->
-                                <form id="subscribe" role="form">
+                                <%= form_tag "/signup", remote: true, id: "subscribe", method: "post" do %>
                                     <div class="row earlyaccess-box">
                                         <div class="col-sm-8 col-sm-offset-2">
-                                            <p class="subscription-success"><i class="icon icon_check_alt2"></i> You are successfully subscribed for our beta list.</p>
-                                            <p class="subscription-failed"><i class="icon icon_close_alt2"></i> Something went wrong!</p>
+                                            <p class="subscription-success"><i class="fa fa-check-circle"></i> You are successfully subscribed for our beta list.</p>
+                                            <p class="subscription-failed"><i class="fa fa-exclamation-circle"></i> Something went wrong!</p>
 
                                             <div class="input-group">
-                                                <input type="email" id="s-email" name="email" placeholder="Enter your Email Address" class="form-control" required>
+                                                <%= email_field_tag :email, nil, :placeholder => "Enter your Email Address", :class => "form-control", :id => "email-field", :required => true %>
                                                 <span class="input-group-btn">
-                                                    <button class="btn btn-color">SIGN UP FOR BETA</button>
+                                                    <%= submit_tag "SIGN UP FOR BETA", :class => "btn btn-color",  id: "submit-button" %>
                                                 </span>
                                             </div>
                                         </div>
                                     </div>
-                                </form>
+                                <% end %>
                             </div>
 
                         </div><!-- /End Intro-Section -->
@@ -221,32 +197,32 @@
                 <div class="row">
                     <!-- Section Header Title -->
                     <div class="col-xs-12">
-                        <h2>It's about making ideas happen</h2>
-                        <p class="large">Spend less time worrying about front-end and more focusing on your product.</p>
+                        <h2>Be there for the biggest moments </h2>
+                        <!-- <p class="large">Spend less time worrying about front-end and more focusing on your product.</p> -->
                     </div>
                 </div>
                 <!-- Three Main Features with Icons -->
                 <div class="row">
                     <div class="col-sm-4 intro-content">
                         <div class="icon-lg">
-                            <i class="icon icon-mobile"></i>
+                            <i class="fa fa-ticket"></i>
                         </div>
-                        <h4>Responsive Layout</h4>
-                        <p>Optio dolores expedita unde vel laudantium enim nisi eos distinctio, rem. Repellat repudiandae quos laborum magni.</p>
+                        <h4>The Best Tickets</h4>
+                        <p>Spend less time searching and more time watching. Tell us your favorite teams, set your price range and let Mitt notify you when we find the tickets you’re looking for. </p>
                     </div>
                     <div class="col-sm-4 intro-content">
                         <div class="icon-lg">
-                            <i class="icon icon-browser"></i>
+                            <i class="fa fa-plane"></i>
                         </div>
-                        <h4>Easy to Customize</h4>
-                        <p>Praesentium reprehenderit quae, sequi deserunt laboriosam velit necessitatibus nulla ea optio, quis nam pariatur.</p>
+                        <h4>The Cheapest Flights</h4>
+                        <p>Don’t let long distance get in the way of you and your favorite team.  Mitt helps you find the best game day flight deals.</p>
                     </div>
                     <div class="col-sm-4 intro-content">
                         <div class="icon-lg">
-                            <i class="icon icon-documents"></i>
+                            <i class="fa fa-search"></i>
                         </div>
-                        <h4>Fully Documented</h4>
-                        <p>Aperiam recusandae ipsa culpa, cupiditate magnam dolor molestiae, omnis, architecto possimus aperiam corrupti corporis.</p>
+                        <h4>The Easiest Filtering</h4>
+                        <p>Mitt finds you games that fit around your busy schedule and lets you easily sort them by price, date, weekend games and key matchups.</p>
                     </div>
                 </div><!-- /End Row -->
             </div><!-- /End Wrapper -->
@@ -257,89 +233,29 @@
     ============================== -->
 
 
-
     <!-- ==================================================
         FOOTER
     ======================================================= -->
     <footer class="footer dark-bg" id="footer">
         <div class="container">
-            <div class="wrapper-lg">
+            <div class="wrapper-xs">
                 <div class="row">
-                    <!-- Footer Left Col -->
-                    <div class="col-md-5">
-                            <!-- Logo -->
-                            <a href="#top" class="scrollto" title="SmartMvp">
-                                <span class="text-logo">SmartMvp</span>
-                            </a>
-                            <p class="footer-hero"><strong>600.000</strong> users registered since January.</p>
-                            <p class="footer-text">We've created the product that will help your startup get better marketing results with beautiful design.</p>
-                            <p class="footer-cta">What are you waiting for?
-                                <a href="#top" class="btn btn-color">Purchase this Design</a>
-                            </p>
-                    </div>
-                    <!-- Footer Contact Col -->
-                    <div class="col-md-3">
-                        <h5 class="text-white">Our Contact</h5>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="icon icon_mail"></i>
-                            </div>
-                            <div class="contact-content">
-                                <a href="mailto:hi@themedept.com">hi@themedept.com</a>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="icon icon_pin"></i>
-                            </div>
-                            <div class="contact-content">
-                                121 King Street, Melbourne<br>
-                                Victoria 3000 Australia
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="icon icon_phone"></i>
-                            </div>
-                            <div class="contact-content">
-                                1-234-567-89
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Footer Right Col: Twitter Feed -->
-                    <div class="col-md-4">
-                            <h5 class="text-white">Recent Tweets</h5>
-                            <div class="tweet"></div>
-                    </div>
-
                     <!-- Footer Menu and Copy -->
-                    <div class="row">
-                        <div class="col-md-12">
-                            <ul class="footer-nav">
-                                <li>
-                                    <a href="#">About</a>
-                                </li>
-                                <li>
-                                    <a href="#">Blog</a>
-                                </li>
-                                <li>
-                                    <a href="#">Help</a>
-                                </li>
-                                <li>
-                                    <a href="#">Terms</a>
-                                </li>
-                                <li>
-                                    <a href="#">Privacy</a>
-                                </li>
-                            </ul>
-                            <p class="footer-copy">&copy; 2014 - SmartMvp. Original Design by <a href="http://themedept.com">ThemeDept.</a></p>
-                        </div>
+                    <div class="col-md-12">
+                        <p class="footer-copy">&copy; 2014 - Mitt. Original Design by <a href="http://themedept.com">ThemeDept.</a></p>
                     </div>
-
                 </div><!-- End Row -->
             </div><!-- /End Wrapper -->
         </div><!-- /End Container -->
     </footer>
+
+
+    <!-- =========================
+         SCRIPTS
+    ============================== -->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
 
 </body>
 </html>
