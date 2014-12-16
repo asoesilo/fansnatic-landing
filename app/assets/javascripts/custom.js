@@ -206,10 +206,11 @@ $("#earlyaccess-modal").submit(function(e) {
     if ( isValidEmail(data['email']) ) {
         $.ajax({
             type: "POST",
-            url: "assets/php/subscribe.php",
+            url: "/signup",
+            beforeSend: function(xhr) {xhr.setRequestHeader('X-CSRF-Token', $('meta[name="csrf-token"]').attr('content'))},
             data: data,
             success: function() {
-                $('.lm-success').fadeIn(1000);
+                $('.lm-success').fadeIn(500);
                 $('.lm-failed').fadeOut(500);
             }
         });
