@@ -237,7 +237,7 @@ blockquote img {
 /*   Wrappers & Boxes
 /*------------------------------------------*/
 .wrapper-lg{
-    padding: 120px 0;
+    padding: 70px 0;
 }
 
 .wrapper-md{
@@ -1729,6 +1729,10 @@ p {
     margin-top: 0.4em;
     font-family: 'Open Sans', serif;
     color:#fff;
+}
+
+.section-title {
+    margin-bottom: 45px;
 }
 
 #submit-button {
