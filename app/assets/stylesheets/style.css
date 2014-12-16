@@ -255,7 +255,7 @@ blockquote img {
 /* vertical align */
 .vmiddle{
     position: relative;
-    top: 50%;
+    top: 40%;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -o-transform: translateY(-50%);
@@ -1729,4 +1729,12 @@ p {
     margin-top: 0.4em;
     font-family: 'Open Sans', serif;
     color:#fff;
+}
+
+#submit-button {
+    width: 100%;
+}
+
+#email-field {
+    width: 100%;
 }

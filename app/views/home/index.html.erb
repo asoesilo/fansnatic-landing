@@ -164,10 +164,14 @@
                                             <p class="subscription-failed"><i class="fa fa-exclamation-circle"></i> Something went wrong!</p>
 
                                             <div class="input-group">
+                                                <div class="col-md-8 col-xs-8 col-xs-offset-2 col-md-offset-0">
                                                 <%= email_field_tag :email, nil, :placeholder => "Enter your Email Address", :class => "form-control", :id => "email-field", :required => true %>
-                                                <span class="input-group-btn">
-                                                    <%= submit_tag "SIGN UP FOR BETA", :class => "btn btn-color",  id: "submit-button" %>
-                                                </span>
+                                                </div>
+                                                <div class="col-md-4 col-xs-8 col-xs-offset-2 col-md-offset-0">
+                                                    <span class="input-group-btn">
+                                                        <%= submit_tag "SIGN UP FOR BETA", :class => "btn btn-color",  id: "submit-button" %>
+                                                    </span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -242,7 +246,7 @@
                 <div class="row">
                     <!-- Footer Menu and Copy -->
                     <div class="col-md-12">
-                        <p class="footer-copy">&copy; 2014 - Mitt. Original Design by <a href="http://themedept.com">ThemeDept.</a></p>
+                        <p class="footer-copy">&copy; 2014 - Mitt.io</a></p>
                     </div>
                 </div><!-- End Row -->
             </div><!-- /End Wrapper -->

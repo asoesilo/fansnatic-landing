@@ -1,12 +1,19 @@
 /* ==========================================================================
    RESPONSIVE STYLES
- ========================================================================== */ 
+ ========================================================================== */
 
 /* ------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------ */
-@media (max-width: 1199px) {
+@media (max-width: 1800px) {
+    #submit-button {
+        border-radius: 4px;
+    }
+
+    #email-field {
+        border-radius: 4px;
+    }
 
     /*------------------------------------------*/
     /*    General Fixes
@@ -54,7 +61,7 @@
     .newsletter .getnewsletter{
         width: 120px;
     }
-    
+
     /*------------------------------------------*/
     /*   Footer
     /*------------------------------------------*/
@@ -70,8 +77,8 @@
         padding-top: 10%;
     }
 
-    
-	
+
+
 }
 
 
@@ -101,9 +108,16 @@
     /*-----------------------------------------------------------*/
     /*    Show Navbar Toggle and Hide Navbar Menu, Bootstrap Fixes
     /*-----------------------------------------------------------*/
+    #submit-button {
+        margin-top: 10px;
+        border-radius: 0px;
+    }
+
+    #email-field {
+        border-radius: 0px;
+    }
+
     .navbar-fixed-top {
-        background: #323a45;
-        background: rgba(50,58,69,0.95);
         padding-top: 0;
         padding-bottom: 0;
     }
@@ -120,13 +134,13 @@
         border-top: 1px solid transparent;
         box-shadow: none;
     }
-    
+
     .navbar-collapse.collapse {
         display: none!important;
     }
 
-    .navbar-collapse.collapse.in {  
-        display: block!important; 
+    .navbar-collapse.collapse.in {
+        display: block!important;
     }
 
     .navbar-nav {
@@ -234,7 +248,7 @@
     .testimonial-press .etabs{
         display:none;
     }
-    
+
     /*------------------------------------------*/
     /*   Newsletter
     /*------------------------------------------*/
@@ -336,7 +350,7 @@
         height: 35px;
         padding: 20% 5%;
     }
-    
+
     /*------------------------------------------*/
     /*    Mobile-Download
     /*------------------------------------------*/
@@ -378,7 +392,7 @@
         display: none;
     }
 
-    
+
 
 }
 
@@ -388,7 +402,7 @@
 /* ------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------ */
 @media (max-width: 767px) {
-    
+
     /*----------------------------------------------------------------------*/
     /*    IMPORTANT!!! DISABLE WOW ANIMATION ON SMALL SCREENS (<768px)
     /*-----------------------------------------------------------------------*/
@@ -399,6 +413,14 @@
            -o-animation: none !important;
           -ms-animation: none !important;
               animation: none !important;
+    }
+
+    #submit-button {
+        border-radius: 0px;
+    }
+
+    #email-field {
+        border-radius: 0px;
     }
 
     /*------------------------------------------*/
@@ -458,7 +480,7 @@
     .newsletter .table {
         text-align: left;
     }
-    
+
     /*------------------------------------------*/
     /*   Signup-Divider
     /*------------------------------------------*/
@@ -560,7 +582,7 @@
     .countdown-box .large{
         display:none;
     }
-    
+
     .countdown-box .earlyaccess-box {
         margin-top:5px;
     }
@@ -575,7 +597,7 @@
     .hero-app .hero-section .btn{
         margin-top: 5px;
     }
-    
+
 
 }
 
@@ -672,8 +694,8 @@
     .fast-reg-box{
         margin-top: 20px;
     }
-    
-       	
+
+
 }
 
 
@@ -712,7 +734,7 @@
     }
 
     /*------------------------------------------*/
-    /*   Showcase 
+    /*   Showcase
     /*------------------------------------------*/
     .showcase .video-player{
         left: 50%;
