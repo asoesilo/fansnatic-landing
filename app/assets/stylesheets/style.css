@@ -420,6 +420,10 @@ p {
     color: #ffffff;
 }
 
+.slogan {
+    font-size: 3rem;
+}
+
 
 /* ==========================================================================
    03. BUTTONS & ICONS
@@ -1737,6 +1741,7 @@ p {
 
 #submit-button {
     width: 100%;
+    font-style: 1rem;
 }
 
 #email-field {
