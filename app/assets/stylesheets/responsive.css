@@ -13,6 +13,7 @@
 
     #email-field {
         border-radius: 4px;
+        max-width: 100%;
     }
 
     /*------------------------------------------*/
@@ -831,9 +832,12 @@
         display: none;
     }
 
-    .earlyaccess .btn{
-        font-size: 10px;
-    }
+}
 
+@media (max-width: 351px) {
+
+    #email-field {
+        min-width: 165px;
+    }
 
 }
